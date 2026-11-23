@@ -1,0 +1,59 @@
+{
+  "artifact_version": "v14-venturefold-paired-eval (2026-08-30)",
+  "command": "OPENAI_API_KEY= PIPEDRIVE_LIVE=0 python3 run.py --ablation",
+  "excluded_runs": 0,
+  "executed_on": "2026-08-30",
+  "paid_api_calls": 0,
+  "python_version": "3.13.9",
+  "scope": "deterministic technical compatibility probe on the synthetic development corpus",
+  "conditions": {
+    "mit_guardrail": {
+      "accuracy": 0.5,
+      "f1": 0.0,
+      "fn": 5,
+      "fp": 0,
+      "n": 10,
+      "over_match_rate": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tn": 5,
+      "tp": 0,
+      "rows": [
+        {"name": "Synthetic Mobility Lab", "pred_sufficient": false, "reference": true, "score": 30, "rec": "abgelehnt", "abstain": true},
+        {"name": "Synthetic Geo Systems", "pred_sufficient": false, "reference": true, "score": 42, "rec": "beobachten", "abstain": true},
+        {"name": "Synthetic Materials Loop", "pred_sufficient": false, "reference": true, "score": 30, "rec": "abgelehnt", "abstain": true},
+        {"name": "Synthetic Fuel Software", "pred_sufficient": false, "reference": true, "score": 30, "rec": "abgelehnt", "abstain": true},
+        {"name": "Synthetic Kiln Analytics", "pred_sufficient": false, "reference": true, "score": 54, "rec": "beobachten", "abstain": true},
+        {"name": "Synthetic Survey Service", "pred_sufficient": false, "reference": false, "score": 42, "rec": "beobachten", "abstain": true},
+        {"name": "Synthetic Construction AI", "pred_sufficient": false, "reference": false, "score": 42, "rec": "beobachten", "abstain": true},
+        {"name": "Synthetic Bulk Platform", "pred_sufficient": false, "reference": false, "score": 42, "rec": "beobachten", "abstain": true},
+        {"name": "Synthetic Build SaaS", "pred_sufficient": false, "reference": false, "score": 42, "rec": "beobachten", "abstain": true},
+        {"name": "Synthetic Carbon Ledger", "pred_sufficient": false, "reference": false, "score": 30, "rec": "abgelehnt", "abstain": true}
+      ]
+    },
+    "ohne_guardrail": {
+      "accuracy": 0.5,
+      "f1": 0.0,
+      "fn": 5,
+      "fp": 0,
+      "n": 10,
+      "over_match_rate": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "tn": 5,
+      "tp": 0,
+      "rows": [
+        {"name": "Synthetic Mobility Lab", "pred_sufficient": false, "reference": true, "score": 30, "rec": "abgelehnt", "abstain": true},
+        {"name": "Synthetic Geo Systems", "pred_sufficient": false, "reference": true, "score": 42, "rec": "beobachten", "abstain": true},
+        {"name": "Synthetic Materials Loop", "pred_sufficient": false, "reference": true, "score": 30, "rec": "abgelehnt", "abstain": true},
+        {"name": "Synthetic Fuel Software", "pred_sufficient": false, "reference": true, "score": 30, "rec": "abgelehnt", "abstain": true},
+        {"name": "Synthetic Kiln Analytics", "pred_sufficient": false, "reference": true, "score": 54, "rec": "beobachten", "abstain": true},
+        {"name": "Synthetic Survey Service", "pred_sufficient": false, "reference": false, "score": 42, "rec": "beobachten", "abstain": true},
+        {"name": "Synthetic Construction AI", "pred_sufficient": false, "reference": false, "score": 42, "rec": "beobachten", "abstain": true},
+        {"name": "Synthetic Bulk Platform", "pred_sufficient": false, "reference": false, "score": 42, "rec": "beobachten", "abstain": true},
+        {"name": "Synthetic Build SaaS", "pred_sufficient": false, "reference": false, "score": 42, "rec": "beobachten", "abstain": true},
+        {"name": "Synthetic Carbon Ledger", "pred_sufficient": false, "reference": false, "score": 30, "rec": "abgelehnt", "abstain": true}
+      ]
+    }
+  }
+}

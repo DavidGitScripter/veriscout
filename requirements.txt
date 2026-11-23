@@ -1,0 +1,20 @@
+# Versionen bewusst festgeschrieben. Ein Container muss reproduzierbar
+# entstehen, sonst prueft die IT einen anderen Stand als den ausgelieferten.
+# Nach dem ersten erfolgreichen Bau mit "pip freeze" gegenpruefen.
+
+fastapi==0.141.1
+uvicorn[standard]==0.52.1
+
+# Die OpenAI Responses API wird bewusst ueber die Python-Standardbibliothek
+# angesprochen. Dadurch gibt es fuer den Live-Pfad keine zusaetzliche SDK-
+# Versionsvariable; Modell- und API-Metadaten werden je Aufruf protokolliert.
+
+# Nur fuer den Cloud-Betrieb noetig. Lokal genuegt SQLite aus der
+# Standardbibliothek, dann bleibt dieses Paket ungenutzt.
+psycopg[binary]==3.3.4
+anthropic==1.15.0
+pypdf==6.21.1
+
+# 12.11.2026: Zertifikatspruefung des Betriebssystems fuer den Quellenabruf
+# (ergaenzt fehlende Zwischenzertifikate, z. B. surap.de; Pruefung bleibt streng).
+truststore==0.10.5

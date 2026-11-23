@@ -1,0 +1,8 @@
+{
+  "meta": {
+    "purpose": "Leeres Entwicklungsregister. Kuratierte Kandidaten sind im SAS–MAS-Vergleich deaktiviert.",
+    "reviewed_at": "2026-08-24",
+    "rule": "Keine organisationsbezogenen Prozesshypothesen oder vorselektierten Kandidaten im aktiven Forschungsprojekt. Entwicklungsleads dürfen nur in einem getrennten, synthetischen Korpus und symmetrisch für beide Arme verwendet werden."
+  },
+  "leads": []
+}

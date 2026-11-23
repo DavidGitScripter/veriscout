@@ -1,0 +1,19 @@
+# Nichts Vertrauliches und nichts Ueberfluessiges ins Abbild
+.env
+.env.*
+!.env.example
+*.db
+memory_store.json
+audit_log.jsonl
+runtime/
+__pycache__/
+*.pyc
+.git/
+.github/
+artifacts/
+docs/reports/
+tests/
+themes.json
+*.xlsx
+*.xls
+.DS_Store

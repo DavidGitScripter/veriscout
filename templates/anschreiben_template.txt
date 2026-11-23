@@ -1,0 +1,13 @@
+Betreff: Rechercheimpuls fuer {{akteur}}
+
+Hallo {{kontakt_name}},
+
+im Rahmen eines oeffentlich belegten Startup-Scoutings ist uns {{startup}}
+aufgefallen — besonders mit Blick auf {{use_case}}.
+
+Fuer die Zielorganisation {{akteur}} sehen wir hier einen konkreten Anknuepfungspunkt
+und wuerden Sie gerne unverbindlich kennenlernen. Haetten Sie in den naechsten
+zwei Wochen 20 Minuten fuer ein kurzes Gespraech?
+
+Herzliche Gruesse
+{{absender}}

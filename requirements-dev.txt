@@ -1,0 +1,2 @@
+# Nur fuer reproduzierbare Offline-Pruefungen; nicht Teil des Laufzeitimages.
+pytest==9.1.1

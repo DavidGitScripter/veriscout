@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://venturescout.example/schemas/retrieved-organization-sources.schema.json",
+  "title": "Ausgabeschema recherchierter öffentlicher Organisationsquellen",
+  "type": "object",
+  "required": ["meta", "documents"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["review_interval_days", "stale_after_days"],
+      "properties": {
+        "review_interval_days": {"type": "integer", "minimum": 1},
+        "stale_after_days": {"type": "integer", "minimum": 1}
+      }
+    },
+    "documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["document_id", "organization_id", "title", "publisher", "url", "retrieved_at", "status", "evidence"],
+        "properties": {
+          "document_id": {"type": "string", "pattern": "^SRC-[A-Z0-9]+-[0-9]{4}-[0-9]{3}$"},
+          "organization_id": {"type": "string", "minLength": 1},
+          "title": {"type": "string", "minLength": 1},
+          "publisher": {"type": "string", "minLength": 1},
+          "url": {"type": "string", "format": "uri"},
+          "published_at": {"type": ["string", "null"], "format": "date"},
+          "retrieved_at": {"type": "string", "format": "date"},
+          "content_hash": {"type": ["string", "null"]},
+          "status": {"enum": ["verified", "requires_date_check", "changed_requires_review", "stale", "superseded", "unreachable"]},
+          "next_review_at": {"type": "string", "format": "date"},
+          "supersedes_document_id": {"type": ["string", "null"]},
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["profile_field", "excerpt", "coding_decision"],
+              "properties": {
+                "profile_field": {"type": "string"},
+                "excerpt": {"type": "string"},
+                "coding_decision": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

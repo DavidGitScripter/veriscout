@@ -1,0 +1,33 @@
+# Geheimnisse / lokale Konfiguration — NIE committen
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Laufzeit-/Zustandsdateien des Prototyps
+memory_store.json
+audit_log.jsonl
+artifacts/*/
+!artifacts/README.md
+runtime/
+.pytest_cache/
+
+# Vertrauliche Daten — duerfen in diesem Ordner nicht liegen
+# Die interne Themenliste der Mitgliedsunternehmen wurde bewusst entfernt.
+# Dieser Eintrag verhindert, dass sie versehentlich zurueckkommt.
+themes.json
+*.xlsx
+*.xls
+
+# Lokale Ablage des Prototyps
+*.db
+vorqualifiziert.db
+
+# Hauptstudie: Aufgabenliste, Fallblaetter, Plan und Kostenbuch koennen Namen
+# von Partnerunternehmen enthalten. Nur die Vorlagen werden geteilt.
+studie/*
+!studie/aufgaben_vorlage.csv
+!studie/fallblaetter_vorlage.json
+!studie/AUSWAHLREGEL.md

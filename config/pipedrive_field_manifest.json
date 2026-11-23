@@ -1,0 +1,33 @@
+{
+  "schema_version": "2026-08-29.v2",
+  "api_version": "v2",
+  "mode": "create_missing_only",
+  "conflict_policy": "abort_on_type_mismatch",
+  "note": "Organisationsneutrales Beispielmanifest. Es enthält keine Kunden-, Partner- oder Organisationsstammdaten.",
+  "native_organization_fields": ["name", "address", "website", "linkedin", "employee_count", "label_ids"],
+  "organization_fields": [
+    {"name": "ScoutRef Entitäts-ID", "field_type": "varchar"},
+    {"name": "Lösung", "field_type": "text"},
+    {"name": "Lösung Stand", "field_type": "date"},
+    {"name": "Gründungsjahr", "field_type": "double"},
+    {"name": "Entwicklungsphase", "field_type": "enum", "options": ["Unbekannt", "Pre-Seed", "Seed", "Series A", "Series B", "Bootstrapped"]},
+    {"name": "Technologie", "field_type": "set", "options": ["KI & Advanced Analytics", "Sensorik", "Robotik & Automation", "Embedded Systems", "Materials & Chemistry", "Energiesysteme", "Software", "Fertigungsverfahren", "Bau-/Hardware-Systeme"]},
+    {"name": "Evidenzstatus Unternehmen", "field_type": "enum", "options": ["Vollständig belegt", "Unvollständig", "Widersprüchlich", "Veraltet", "Nicht zulässig"]}
+  ],
+  "person_fields": [],
+  "deal_fields": [
+    {"name": "ScoutRef Relation-ID", "field_type": "varchar"},
+    {"name": "Zielorganisation", "field_type": "org"},
+    {"name": "ScoutRef Lauf-ID", "field_type": "varchar"},
+    {"name": "Evidenzstatus Bewertung", "field_type": "enum", "options": ["Vollständig belegt", "Unvollständig", "Widersprüchlich", "Veraltet", "Nicht zulässig"]},
+    {"name": "Kurzbegründung", "field_type": "text"},
+    {"name": "Freigegeben von", "field_type": "user"},
+    {"name": "Freigabedatum", "field_type": "date"},
+    {"name": "Priorität", "field_type": "enum", "options": ["Hoch", "Mittel", "Niedrig"], "human_only": true}
+  ],
+  "pipeline": {
+    "name": "ScoutRef Scouting",
+    "stages": ["Vorqualifiziert", "Kontakt vorbereitet", "Kontakt aufgenommen", "Termin vereinbart", "Kooperationsprüfung", "Follow-up"]
+  },
+  "seed_organizations": []
+}

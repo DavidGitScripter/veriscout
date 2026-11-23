@@ -1,0 +1,47 @@
+{
+  "schema_version": "2026-08-29.v1",
+  "snapshot_scope": "generic_procedural_training_only",
+  "frozen_at": "2026-08-29T00:00:00+00:00",
+  "records": [
+    {
+      "event_version": 2,
+      "memory_id": "mem-procedural-evidence-before-judgment",
+      "scope": "global_procedural",
+      "organization_id": "*",
+      "actor_id": "*",
+      "description": "Positive Empfehlungen benötigen direkte Belege für Identität, Zielprozess, Anbieterfähigkeit und die relationale Wirkungskette.",
+      "outcome": "useful",
+      "label": true,
+      "score": 0,
+      "dataset_split": "train",
+      "task_group_id": "generic-procedural-001",
+      "event_time": "2026-01-01T00:00:00+00:00",
+      "valid_from": "2026-01-01T00:00:00+00:00",
+      "valid_to": null,
+      "status": "active",
+      "source_family": "method-rule",
+      "provenance": "Manuell festgelegte, nicht fachbehauptende Verfahrensregel",
+      "write_action": "non_write"
+    },
+    {
+      "event_version": 2,
+      "memory_id": "mem-procedural-abstain-on-conflict",
+      "scope": "global_procedural",
+      "organization_id": "*",
+      "actor_id": "*",
+      "description": "Bei widersprüchlichen oder zeitlich überholten Belegen wird keine positive Empfehlung erzwungen; der Fall wird zur Prüfung oder Enthaltung geroutet.",
+      "outcome": "useful",
+      "label": true,
+      "score": 0,
+      "dataset_split": "train",
+      "task_group_id": "generic-procedural-002",
+      "event_time": "2026-01-01T00:00:00+00:00",
+      "valid_from": "2026-01-01T00:00:00+00:00",
+      "valid_to": null,
+      "status": "active",
+      "source_family": "method-rule",
+      "provenance": "Manuell festgelegte, nicht fachbehauptende Verfahrensregel",
+      "write_action": "non_write"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scoutref.local/schema/instance.schema.json",
+  "title": "VentureScout Instance Contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "instance_id", "name", "organizations", "search_fields", "features", "evidence_dimensions"],
+  "properties": {
+    "schema_version": {"type": "string", "minLength": 1},
+    "instance_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_-]{2,63}$"},
+    "name": {"type": "string", "minLength": 1, "maxLength": 120},
+    "organizations": {"type": "array", "maxItems": 0, "description": "Die generische Auslieferung speichert keine Organisationsstammliste."},
+    "search_fields": {"type": "array", "maxItems": 0, "description": "Suchfelder werden auftragsbezogen eingegeben und eingefroren."},
+    "features": {
+      "type": "object",
+      "additionalProperties": {"type": "boolean"},
+      "required": ["legacy_api", "crm_write", "outreach_write", "online_memory_write"]
+    },
+    "evidence_dimensions": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "decision_states": {
+      "type": "array",
+      "items": {"enum": ["fully_supported", "incomplete", "contradictory", "not_permitted"]}
+    }
+  }
+}

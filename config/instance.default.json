@@ -1,0 +1,25 @@
+{
+  "schema_version": "2026-08-29.v1",
+  "instance_id": "scoutref-default",
+  "name": "VentureScout Default",
+  "organizations": [],
+  "search_fields": [],
+  "features": {
+    "legacy_api": false,
+    "crm_write": false,
+    "outreach_write": false,
+    "online_memory_write": false
+  },
+  "evidence_dimensions": [
+    "identity",
+    "startup_status",
+    "target_identity",
+    "target_process",
+    "input_stream",
+    "startup_capability",
+    "transformation",
+    "output_application",
+    "relational_chain"
+  ],
+  "decision_states": ["fully_supported", "incomplete", "contradictory", "not_permitted"]
+}

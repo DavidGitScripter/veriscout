@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "stand": "2026-08-29",
+    "classification": "synthetic-demo",
+    "purpose": "Technische Demo-Entitäten; kein Organisations- oder Kundenkatalog.",
+    "boundary": "Produktive Zielorganisationen werden je Auftrag über den öffentlichen Aufgabenvertrag eingegeben und nicht im generischen Repository gespeichert."
+  },
+  "actors": [
+    {
+      "id": "demo_manufacturing",
+      "name": "Demo Manufacturing",
+      "rolle": "Synthetische Testorganisation",
+      "standort": "Beispielregion",
+      "sectors": ["Industry & Manufacturing"],
+      "synthetic": true
+    },
+    {
+      "id": "other_organization",
+      "name": "Other Demo Organization",
+      "rolle": "Synthetische Negativkontrolle",
+      "standort": "Beispielregion",
+      "sectors": ["Building"],
+      "synthetic": true
+    }
+  ]
+}

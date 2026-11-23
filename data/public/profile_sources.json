@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "purpose": "Leerer public-only Quellenkatalog der generischen Auslieferung; Dokument-ID und Zielorganisation sind getrennte Felder.",
+    "review_interval_days": 180,
+    "stale_after_days": 270,
+    "change_policy": "URL- oder Inhaltsänderungen werden erkannt, aber nie automatisch fachlich übernommen. Geänderte Dokumente erhalten changed_requires_review.",
+    "stand": "2026-08-24",
+    "coverage": "Noch keine Quellen für die konfirmatorische Evaluation eingefroren. Quellen werden erst aus den ausgewählten öffentlichen Aufgabenpaketen übernommen."
+  },
+  "documents": []
+}
